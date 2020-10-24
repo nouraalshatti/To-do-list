@@ -12,7 +12,6 @@
 		1407D14A2538727F0059B2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D1492538727F0059B2E3 /* ViewController.swift */; };
 		1407D14D2538727F0059B2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1407D14B2538727F0059B2E3 /* Main.storyboard */; };
 		1407D152253872870059B2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1407D150253872870059B2E3 /* LaunchScreen.storyboard */; };
-		1407D15A2538837B0059B2E3 /* welcomescreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D1592538837B0059B2E3 /* welcomescreenVC.swift */; };
 		14111AC8253DB7820033682C /* clouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14111AC7253DB7820033682C /* clouds.mp4 */; };
 		14111ACA253DC5970033682C /* weatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14111AC9253DC5970033682C /* weatherVC.swift */; };
 		14111ACE253DC5BC0033682C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14111ACC253DC5BC0033682C /* Networking.swift */; };
@@ -20,9 +19,11 @@
 		14111AD1253DC6450033682C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14111AD0253DC6450033682C /* File.swift */; };
 		14111AD3253DCAE50033682C /* To-DoListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14111AD2253DCAE50033682C /* To-DoListTableVC.swift */; };
 		14111AD5253DCC8D0033682C /* addTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14111AD4253DCC8D0033682C /* addTaskVC.swift */; };
+		142F25802544384A003B5B11 /* infoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F257F2544384A003B5B11 /* infoTableVC.swift */; };
+		144B90D92541C6F9003F7D8A /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144B90D82541C6F9003F7D8A /* ButtonVC.swift */; };
 		146906F72540885000EFA413 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146906F62540885000EFA413 /* Images.xcassets */; };
 		146906F82540896200EFA413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1407D14E253872870059B2E3 /* Assets.xcassets */; };
-		146906FA2540CAEC00EFA413 /* listTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146906F92540CAEC00EFA413 /* listTableVC.swift */; };
+		147A57412544303600808355 /* firstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A57402544303600808355 /* firstVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,6 @@
 		1407D14E253872870059B2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1407D151253872870059B2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1407D153253872870059B2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1407D1592538837B0059B2E3 /* welcomescreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomescreenVC.swift; sourceTree = "<group>"; };
 		14111AC7253DB7820033682C /* clouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds.mp4; sourceTree = "<group>"; };
 		14111AC9253DC5970033682C /* weatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherVC.swift; sourceTree = "<group>"; };
 		14111ACC253DC5BC0033682C /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -42,8 +42,10 @@
 		14111AD0253DC6450033682C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		14111AD2253DCAE50033682C /* To-DoListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To-DoListTableVC.swift"; sourceTree = "<group>"; };
 		14111AD4253DCC8D0033682C /* addTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskVC.swift; sourceTree = "<group>"; };
+		142F257F2544384A003B5B11 /* infoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoTableVC.swift; sourceTree = "<group>"; };
+		144B90D82541C6F9003F7D8A /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 		146906F62540885000EFA413 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		146906F92540CAEC00EFA413 /* listTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableVC.swift; sourceTree = "<group>"; };
+		147A57402544303600808355 /* firstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstVC.swift; sourceTree = "<group>"; };
 		14D7454F25406B02002A82CE /* To-do.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "To-do.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,16 +82,17 @@
 				14D7454F25406B02002A82CE /* To-do.entitlements */,
 				14111ACB253DC5BC0033682C /* Networking */,
 				14111AC7253DB7820033682C /* clouds.mp4 */,
+				144B90D82541C6F9003F7D8A /* ButtonVC.swift */,
+				147A57402544303600808355 /* firstVC.swift */,
 				1407D1452538727F0059B2E3 /* AppDelegate.swift */,
 				1407D1472538727F0059B2E3 /* SceneDelegate.swift */,
 				1407D1492538727F0059B2E3 /* ViewController.swift */,
 				1407D14B2538727F0059B2E3 /* Main.storyboard */,
-				146906F92540CAEC00EFA413 /* listTableVC.swift */,
+				142F257F2544384A003B5B11 /* infoTableVC.swift */,
 				14111AD4253DCC8D0033682C /* addTaskVC.swift */,
 				14111AD2253DCAE50033682C /* To-DoListTableVC.swift */,
 				14111AC9253DC5970033682C /* weatherVC.swift */,
 				14111AD0253DC6450033682C /* File.swift */,
-				1407D1592538837B0059B2E3 /* welcomescreenVC.swift */,
 				1407D14E253872870059B2E3 /* Assets.xcassets */,
 				1407D150253872870059B2E3 /* LaunchScreen.storyboard */,
 				1407D153253872870059B2E3 /* Info.plist */,
@@ -142,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1407D13D2538727E0059B2E3 /* Build configuration list for PBXProject "To-do" */;
+			buildConfigurationList = 1407D13D2538727E0059B2E3 /* Build configuration list for PBXProject "To-Do2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,12 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				146906FA2540CAEC00EFA413 /* listTableVC.swift in Sources */,
 				1407D14A2538727F0059B2E3 /* ViewController.swift in Sources */,
-				1407D15A2538837B0059B2E3 /* welcomescreenVC.swift in Sources */,
+				142F25802544384A003B5B11 /* infoTableVC.swift in Sources */,
 				1407D1462538727F0059B2E3 /* AppDelegate.swift in Sources */,
 				14111ACE253DC5BC0033682C /* Networking.swift in Sources */,
 				14111ACA253DC5970033682C /* weatherVC.swift in Sources */,
+				144B90D92541C6F9003F7D8A /* ButtonVC.swift in Sources */,
+				147A57412544303600808355 /* firstVC.swift in Sources */,
 				14111AD5253DCC8D0033682C /* addTaskVC.swift in Sources */,
 				14111AD3253DCAE50033682C /* To-DoListTableVC.swift in Sources */,
 				14111AD1253DC6450033682C /* File.swift in Sources */,
@@ -379,7 +383,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1407D13D2538727E0059B2E3 /* Build configuration list for PBXProject "To-do" */ = {
+		1407D13D2538727E0059B2E3 /* Build configuration list for PBXProject "To-Do2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1407D154253872870059B2E3 /* Debug */,

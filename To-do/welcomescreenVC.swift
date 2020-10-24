@@ -46,26 +46,26 @@ class welcomescreenVC: UIViewController {
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
          
-    
-   
-    }
-    func playVideo () {
-        guard let path = Bundle.main.path(forResource: "clouds", ofType: "mp4") else{
-            return
-        }
-        
-        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "clouds", ofType: "mp4")!))
-        let layer = AVPlayerLayer(player: player)
-        layer.frame = self.view.bounds
-        view.layer.addSublayer(layer)
-        layer.videoGravity = .resizeAspectFill
-        self.videoLayer.layer.addSublayer(layer)
-        
-        videoLayer.bringSubviewToFront(NameEnter)
-        videoLayer.bringSubviewToFront(currentTemp)
-        player.play()
-        
-    }
+//    
+//   
+//    }
+//    func playVideo () {
+//        guard let path = Bundle.main.path(forResource: "clouds", ofType: "mp4") else{
+//            return
+//        }
+//        
+//        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "clouds", ofType: "mp4")!))
+//        let layer = AVPlayerLayer(player: player)
+//        layer.frame = self.view.bounds
+//        view.layer.addSublayer(layer)
+//        layer.videoGravity = .resizeAspectFill
+//        self.videoLayer.layer.addSublayer(layer)
+//        
+//        videoLayer.bringSubviewToFront(NameEnter)
+//        videoLayer.bringSubviewToFront(currentTemp)
+//        player.play()
+//        
+//    }
     func getWeatherDetails()
     {
         Weather().requestWeatherFor(city: "Kuwait") { (forcast) in
@@ -75,9 +75,20 @@ class welcomescreenVC: UIViewController {
             self.currentTemp.text = "\(tempInC)°"
            
         }
-    }
 
+    
+//
 //    @IBOutlet weak var Continue: UILabel!{
-//        performSegue(withIdentifier: "", sender: <#T##Any?#>)
+//
+//
 //    }
+//    }
+//
+//}
+//override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//      performSegue(withIdentifier: "next", sender: addTasks)
+//
+//
+}
 }
