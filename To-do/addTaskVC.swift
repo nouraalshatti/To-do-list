@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class addTaskVC: UIViewController {
 
@@ -14,6 +15,20 @@ class addTaskVC: UIViewController {
     @IBOutlet weak var TimeInfo: UILabel!
     @IBOutlet weak var NotesINfo: UILabel!
     @IBOutlet weak var NameInfo: UILabel!
+    @IBAction func action(_ sender: Any) {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Make sure to do your school work Noura!"
+        content.subtitle = "1- study math, 2- Attend on time."
+        content.body = "dont forget to do your school work now!"
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "Time is up", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+    }
     
     
     
@@ -25,14 +40,15 @@ class addTaskVC: UIViewController {
         {
             tasksinstring = tasksinstring + " " + task
         }
-
-       
+        
+        
         TasksInfo.text = tasksinstring
         TimeInfo.text = NewFocus.Time
         NotesINfo.text = NewFocus.extraNote
         NameInfo.text = NewFocus.taskname
         
         
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in })
         
         
         

@@ -14,13 +14,14 @@ class firstVC: UIViewController {
 
     @IBOutlet weak var currentTemp: UILabel!
     @IBOutlet weak var videoLayer: UIView!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getWeatherDetails()
          playVideo()
+        
 
-        // Do any additional setup after loading the view.
     }
     
 

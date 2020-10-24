@@ -63,7 +63,6 @@
 		1407D1392538727E0059B2E3 = {
 			isa = PBXGroup;
 			children = (
-				142F258125446107003B5B11 /* timeInfoVC.swift */,
 				1407D1442538727F0059B2E3 /* To-do */,
 				1407D1432538727F0059B2E3 /* Products */,
 			);
@@ -87,6 +86,7 @@
 				147A57402544303600808355 /* firstVC.swift */,
 				1407D1452538727F0059B2E3 /* AppDelegate.swift */,
 				1407D1472538727F0059B2E3 /* SceneDelegate.swift */,
+				142F258125446107003B5B11 /* timeInfoVC.swift */,
 				1407D1492538727F0059B2E3 /* ViewController.swift */,
 				1407D14B2538727F0059B2E3 /* Main.storyboard */,
 				14111AD4253DCC8D0033682C /* addTaskVC.swift */,
