@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class firstVC: UIViewController {
 
     @IBOutlet weak var currentTemp: UILabel!
+    @IBOutlet weak var videoLayer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getWeatherDetails()
+         playVideo()
 
         // Do any additional setup after loading the view.
     }
@@ -30,5 +34,21 @@ class firstVC: UIViewController {
 
             }
     }
+        func playVideo () {
+            guard let path = Bundle.main.path(forResource: "clouds", ofType: "mp4") else{
+                return
+            }
+            
+            let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "clouds", ofType: "mp4")!))
+            let layer = AVPlayerLayer(player: player)
+            layer.frame = self.view.bounds
+            view.layer.addSublayer(layer)
+            layer.videoGravity = .resizeAspectFill
+            self.videoLayer.layer.addSublayer(layer)
+            
+            videoLayer.bringSubviewToFront(currentTemp)
+            player.play()
+   
+        }
 
 }

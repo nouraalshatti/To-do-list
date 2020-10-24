@@ -9,11 +9,13 @@
 import Foundation
 
 struct addTasks {
-    var Taskname:[String]
-    var Time: Int
-    var preremind: Int
+    var taskname : String
+    var Tasks:[String]
+    var Time: String
     var extraNote: String
 }
 var toDoList: [String] = [ ]
+var NewFocus = addTasks(taskname: "", Tasks: [""], Time: " " , extraNote: "")
+
 
 

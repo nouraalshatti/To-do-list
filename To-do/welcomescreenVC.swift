@@ -47,25 +47,25 @@ class welcomescreenVC: UIViewController {
             super.viewDidAppear(animated)
          
 //    
-//   
-//    }
-//    func playVideo () {
-//        guard let path = Bundle.main.path(forResource: "clouds", ofType: "mp4") else{
-//            return
-//        }
+   
+    }
+    func playVideo () {
+        guard let path = Bundle.main.path(forResource: "clouds", ofType: "mp4") else{
+            return
+        }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "clouds", ofType: "mp4")!))
+        let layer = AVPlayerLayer(player: player)
+        layer.frame = self.view.bounds
+        view.layer.addSublayer(layer)
+        layer.videoGravity = .resizeAspectFill
+        self.videoLayer.layer.addSublayer(layer)
+        
+        videoLayer.bringSubviewToFront(NameEnter)
+        videoLayer.bringSubviewToFront(currentTemp)
+        player.play()
 //        
-//        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "clouds", ofType: "mp4")!))
-//        let layer = AVPlayerLayer(player: player)
-//        layer.frame = self.view.bounds
-//        view.layer.addSublayer(layer)
-//        layer.videoGravity = .resizeAspectFill
-//        self.videoLayer.layer.addSublayer(layer)
-//        
-//        videoLayer.bringSubviewToFront(NameEnter)
-//        videoLayer.bringSubviewToFront(currentTemp)
-//        player.play()
-//        
-//    }
+    }
     func getWeatherDetails()
     {
         Weather().requestWeatherFor(city: "Kuwait") { (forcast) in
